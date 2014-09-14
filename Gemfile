@@ -16,6 +16,7 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'rails-observers' 
 gem 'will_paginate'
 gem 'thin'
+#gem 'passenger'
 gem 'formtastic'
 #gem 'mongrel'
 # Use jquery as the JavaScript library
