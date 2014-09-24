@@ -17,6 +17,7 @@
         <td><%= contact.name %></td>
         <td><%= contact.email %></td>
         <td><%= contact.cell %></td>
+        <td><%= contact.image %></td>
         <td><%= contact.suject %></td>
         <td><%= link_to 'Show', contact %></td>
         <td><%= link_to 'Edit', edit_contact_path(contact) %></td>
@@ -39,3 +40,18 @@
 <%= ApplicationHelper::My_name %><br/>
 <%= ApplicationHelper.my_dob %>
 
+<br/>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("p").hide();
+  });
+  $("#show").click(function(){
+    $("p").show();
+  });
+});
+</script>
+<p>If you click on the "Hide" button, I will disappear.</p>
+<button id="hide">Hide</button>
+<button id="show">Show</button>

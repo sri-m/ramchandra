@@ -28,7 +28,7 @@ class MyformsController < ApplicationController
 
     respond_to do |format|
       if @myform.save
-        format.html { render :new }
+        format.html { redirect_to @myform, notice: 'Myform was successfully created.' }
         format.json { render :show, status: :created, location: @myform }
       else
         format.html { render :new }
